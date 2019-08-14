@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Objects\CharacterPortfolio.cs" />
+    <Compile Include="Objects\Identity.cs" />
+    <Compile Include="Objects\Skill.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\CharacterGenrationForm.cs">
@@ -88,9 +91,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Data\" />
-    <Folder Include="Objects\" />
+    <Content Include="Data\firstNames.txt" />
+    <Content Include="Data\lastNames.txt" />
+    <Content Include="Data\skills.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

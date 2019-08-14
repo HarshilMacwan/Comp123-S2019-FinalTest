@@ -186,11 +186,11 @@
             // AbilityPage
             // 
             this.AbilityPage.Controls.Add(this.tableLayoutPanel1);
-            this.AbilityPage.Location = new System.Drawing.Point(4, 22);
+            this.AbilityPage.Location = new System.Drawing.Point(4, 33);
             this.AbilityPage.Margin = new System.Windows.Forms.Padding(2);
             this.AbilityPage.Name = "AbilityPage";
             this.AbilityPage.Padding = new System.Windows.Forms.Padding(2);
-            this.AbilityPage.Size = new System.Drawing.Size(541, 322);
+            this.AbilityPage.Size = new System.Drawing.Size(541, 311);
             this.AbilityPage.TabIndex = 1;
             this.AbilityPage.Text = "Abilities";
             this.AbilityPage.UseVisualStyleBackColor = true;
@@ -237,10 +237,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.StrengthDataLabel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.StrengthDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel1.SetColumnSpan(this.StrengthDataLabel, 2);
             this.StrengthDataLabel.Location = new System.Drawing.Point(186, 0);
             this.StrengthDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.StrengthDataLabel.Name = "StrengthDataLabel";
-            this.StrengthDataLabel.Size = new System.Drawing.Size(101, 36);
+            this.StrengthDataLabel.Size = new System.Drawing.Size(206, 36);
             this.StrengthDataLabel.TabIndex = 2;
             this.StrengthDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -343,10 +344,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DexterityDataLabel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.DexterityDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel1.SetColumnSpan(this.DexterityDataLabel, 2);
             this.DexterityDataLabel.Location = new System.Drawing.Point(186, 36);
             this.DexterityDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DexterityDataLabel.Name = "DexterityDataLabel";
-            this.DexterityDataLabel.Size = new System.Drawing.Size(101, 36);
+            this.DexterityDataLabel.Size = new System.Drawing.Size(206, 36);
             this.DexterityDataLabel.TabIndex = 8;
             this.DexterityDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -357,10 +359,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.EnduranceDataLabel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EnduranceDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel1.SetColumnSpan(this.EnduranceDataLabel, 2);
             this.EnduranceDataLabel.Location = new System.Drawing.Point(186, 72);
             this.EnduranceDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.EnduranceDataLabel.Name = "EnduranceDataLabel";
-            this.EnduranceDataLabel.Size = new System.Drawing.Size(101, 36);
+            this.EnduranceDataLabel.Size = new System.Drawing.Size(206, 36);
             this.EnduranceDataLabel.TabIndex = 9;
             this.EnduranceDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -371,10 +374,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.IntellectDataLabel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.IntellectDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel1.SetColumnSpan(this.IntellectDataLabel, 2);
             this.IntellectDataLabel.Location = new System.Drawing.Point(186, 108);
             this.IntellectDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.IntellectDataLabel.Name = "IntellectDataLabel";
-            this.IntellectDataLabel.Size = new System.Drawing.Size(101, 36);
+            this.IntellectDataLabel.Size = new System.Drawing.Size(206, 36);
             this.IntellectDataLabel.TabIndex = 10;
             this.IntellectDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -385,10 +389,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.EducationDataLabel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EducationDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel1.SetColumnSpan(this.EducationDataLabel, 2);
             this.EducationDataLabel.Location = new System.Drawing.Point(186, 144);
             this.EducationDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.EducationDataLabel.Name = "EducationDataLabel";
-            this.EducationDataLabel.Size = new System.Drawing.Size(101, 36);
+            this.EducationDataLabel.Size = new System.Drawing.Size(206, 36);
             this.EducationDataLabel.TabIndex = 11;
             this.EducationDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -399,29 +404,30 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SocialStandingDataLabel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.SocialStandingDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tableLayoutPanel1.SetColumnSpan(this.SocialStandingDataLabel, 2);
             this.SocialStandingDataLabel.Location = new System.Drawing.Point(186, 180);
             this.SocialStandingDataLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SocialStandingDataLabel.Name = "SocialStandingDataLabel";
-            this.SocialStandingDataLabel.Size = new System.Drawing.Size(101, 36);
+            this.SocialStandingDataLabel.Size = new System.Drawing.Size(206, 36);
             this.SocialStandingDataLabel.TabIndex = 12;
             this.SocialStandingDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SkillsPage
             // 
-            this.SkillsPage.Location = new System.Drawing.Point(4, 22);
+            this.SkillsPage.Location = new System.Drawing.Point(4, 33);
             this.SkillsPage.Margin = new System.Windows.Forms.Padding(2);
             this.SkillsPage.Name = "SkillsPage";
-            this.SkillsPage.Size = new System.Drawing.Size(541, 322);
+            this.SkillsPage.Size = new System.Drawing.Size(541, 311);
             this.SkillsPage.TabIndex = 2;
             this.SkillsPage.Text = "Skills";
             this.SkillsPage.UseVisualStyleBackColor = true;
             // 
             // CharacterSheetPage
             // 
-            this.CharacterSheetPage.Location = new System.Drawing.Point(4, 22);
+            this.CharacterSheetPage.Location = new System.Drawing.Point(4, 33);
             this.CharacterSheetPage.Margin = new System.Windows.Forms.Padding(2);
             this.CharacterSheetPage.Name = "CharacterSheetPage";
-            this.CharacterSheetPage.Size = new System.Drawing.Size(541, 322);
+            this.CharacterSheetPage.Size = new System.Drawing.Size(541, 311);
             this.CharacterSheetPage.TabIndex = 3;
             this.CharacterSheetPage.Text = "Character Sheet";
             this.CharacterSheetPage.UseVisualStyleBackColor = true;
@@ -436,6 +442,7 @@
             this.BackButton.TabIndex = 2;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // NextButton
             // 
@@ -447,6 +454,7 @@
             this.NextButton.TabIndex = 3;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // CharacterGenrationForm
             // 
