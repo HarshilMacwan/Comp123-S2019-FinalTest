@@ -32,36 +32,55 @@ namespace Comp123_S2019_FinalTest.Views
                 MainTabControl.SelectedIndex++;
             }
         }
-
-             
-
-        
-
-        private void GenerateNameButton_Click(object sender, EventArgs e)
+        public static List<string> LoadNames(string name)
         {
             string[] firstNamesArray = File.ReadAllLines(@"C:\Users\301044075\Desktop\Comp123-S2019-FinalTest\Comp123-S2019-FinalTest\Data\firstNames.txt");
             string[] lastNamesArray = File.ReadAllLines(@"C:\Users\301044075\Desktop\Comp123-S2019-FinalTest\Comp123-S2019-FinalTest\Data\lastNames.txt");
-          
-            List<string> lastName = new List<string>(lastNamesArray);
-            List<string> firstname = new List<string>(firstNamesArray);
-           
-            Random r = new Random();
-            int i = r.Next(0, firstname.Count - 1);
-            string firstName = firstname[i];
-            int i2 = r.Next(0, lastName.Count - 1);
-            string lastname = lastName[i2];
+            if (name == "FirstName")
+            {
 
-            FirstNameDataLabel.Text = firstName;
+                List<string> lastName = new List<string>(lastNamesArray);
+                return lastName;
+            }
+            else
+                       {
+                List<string> firstname = new List<string>(firstNamesArray);
+                return firstname;
+            }
+        }
+
+
+        public  void GenrateName()
+        {
+            List<string> LastName = LoadNames("");
+            List<string> firstName = LoadNames("FirstName");
+            Random r = new Random();
+            int i = r.Next(0, firstName.Count - 1);
+            string firstname = firstName[i];
+            int i2 = r.Next(0, LastName.Count - 1);
+            string lastname = LastName[i2];
+
+            FirstNameDataLabel.Text = firstname;
             LastNameDataLabel.Text = lastname;
         }
 
-        private void GenerateAbilitiesButton_Click(object sender, EventArgs e)
+
+
+        private void GenerateNameButton_Click(object sender, EventArgs e)
+        {
+
+
+            GenrateName();
+
+           
+        }
+
+      
+
+        public static void loadSkills()
         {
             string[] skills = File.ReadAllLines(@"C:\Users\301044075\Desktop\Comp123-S2019-FinalTest\Comp123-S2019-FinalTest\Data\skills.txt");
-            Random r = new Random();
-            int i = r.Next(0, skills.Length - 1);
-            string skill = skills[i];
-
+            List<string> skill = new List<string>(skills);
         }
     }
 }
